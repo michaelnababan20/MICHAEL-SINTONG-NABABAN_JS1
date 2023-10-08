@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MICHAEL_JS1</title>
+  </head>
+  <body>
+    <!--      JS If,Else,Nested If      -->
+    <script>
+      // If , Else & Nested If  //
+      const nilai = "D";
+
+      if (nilai === "A") {
+        document.writeln("<p>Pinjam dulu cepek limpul</p>");
+      } else if (nilai === "B") {
+        document.writeln("<p>Pinjam dulu seratus</p>");
+      } else if (nilai === "C") {
+        document.writeln("<p>Pinjam dulu lima puluh</p>");
+      } else {
+        document.writeln("<p>Aku gk punya duit lain kali aja</p>");
+      }
+
+      // Switch Case //
+      switch (nilai) {
+        case "A":
+          document.writeln("<p>Sekarang waktunya Anda Makan</p>");
+          break;
+        case "B":
+          document.writeln("<p>Sekarang waktunya Anda Olahraga</p>");
+          break;
+        case "C":
+          document.writeln("<p>Sekarang waktunya Anda Belajar</p>");
+          break;
+        case "D":
+          document.writeln("<p>Sekarang waktunya Anda Bekerja</p>");
+          break;
+        default:
+          document.writeln("<p>Anda harus Istirahat</p>");
+      }
+
+      // For Statement //
+      const person = {
+        firstName: "Michael",
+        middleName: "Sintong",
+        lastName: "Nababan",
+      };
+
+      console.info(person.firstName);
+      console.info(person.middleName);
+      console.info(person.lastName);
+
+      // While, do While //
+      let counter = 190;
+      do {
+        document.writeln(`<p>Perulangan ke ${counter}</p>`);
+        counter++;
+      } while (counter <= 200);
+
+      // Function //
+      function sayname() {
+        document.writeln("<p>Nama Saya adalah Michael Sintong Nababan</p>");
+      }
+
+      sayname();
+      sayname();
+      sayname();
+      sayname();
+      sayname();
+      sayname();
+      sayname();
+      sayname();
+    </script>
+  </body>
+</html>
